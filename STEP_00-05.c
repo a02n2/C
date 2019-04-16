@@ -39,7 +39,7 @@ int main(void) {
 	s2[13] = 0x6e;
 	s2[14] = '\0';
 
-	memcpy(&(ss1[0]), &(s1[0]), 11);
+	memcpy(&(ss1[0]), &(s1[0]), sizeof(ss1));
 	strcpy(&(ss2[0]), &(s2[0]));
 
 	i = 10;
