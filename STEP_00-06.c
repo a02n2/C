@@ -26,7 +26,7 @@ int main(void) {
 	printf("•Ï”‚Ì’l‚Í%s‚Å‚·\n", &(s[0]));
 
 	printf("•¶š—ñ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢F");
-	scanf("%s", &(inputBuffer[0]));
+	gets(&(inputBuffer[0]));
 
 	printf("“ü—Í‚³‚ê‚½’l‚Í%s‚Å‚·\n", &(inputBuffer[0]));
 
