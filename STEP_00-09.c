@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<string.h>
 #include "STEP_00-09.h"
 
 int main(void) {
@@ -36,12 +37,7 @@ void func3(int* p) {
 
 void func4(char* p) {
 
-	p[0] = 0x82; /*h‚ ‚¢‚¤h‚ğh‚©‚«‚­h‚É•ÏX*/
-	p[1] = 0xA9;
-	p[2] = 0x82;
-	p[3] = 0xAB;
-	p[4] = 0x82;
-	p[5] = 0xAD;
+	strcpy(p, "‚©‚«‚­");  /*h‚ ‚¢‚¤h‚ğh‚©‚«‚­h‚É•ÏX*/
 
 	return;
 }
