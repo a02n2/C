@@ -29,14 +29,14 @@ void func2(char a) {
 
 void func3(int* p) {
 
-	p = 999;
+	p = 999;  /*"111"‚ğ"999"‚É•ÏX*/
 
 	return;
 }
 
 void func4(char* p) {
 
-	p = "‚©‚«‚­";
+	p = "‚©‚«‚­"; /*h‚ ‚¢‚¤h‚ğh‚©‚«‚­h‚É•ÏX*/
 
 	return;
 }
