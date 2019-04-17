@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void) {
+	FILE *fp;
+	char sBuf[256] = { 0 };
+
+	/*1çsì«Ç›çûÇ›*/
+	fp = fopen("STEP_00-07.txt", "r");
+
+	fgets(sBuf, sizeof(sBuf), fp);
+
+	printf("%s", &(sBuf[0]));
+
+	fclose(fp);
+
+	/*í«â¡ÇèëÇ´çûÇ›*/
+	fp = fopen("STEP_00-07.txt", "a");
+
+	fputs("í«â¡", fp);
+
+	fclose(fp);
+
+	return 0;
+
+}
