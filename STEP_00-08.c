@@ -3,24 +3,28 @@ int func2(void);
 char *func3(void);
 
 int main(void) {
+	int i=0;
+	char *p=NULL;
+	
+/*func呼び出し*/
 	func1();
-	func2();
-	func3();
+	i=func2();
+	p=func3();
 	
 	return 0;
 }
 
-/*func1呼び出し*/
+/*戻り値無し*/
 void func1(void) {
 	return;
 }
 
-/*func2呼び出し*/
+/*戻り値255*/
 int func2(void) {
 	return 255;
 }
 
-/*func3呼び出し*/
+/*戻り値"あいうえお"*/
 char *func3(void){
 	return "あいうえお";
 }
