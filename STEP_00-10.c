@@ -40,7 +40,6 @@ int main(void) {
 
 /*if•¶*/
 void func1(int *p) {
-
 	if (*p == 0) {			/*0‚È‚ç1‚ğŠi”[‚µ•\¦*/
 		*p = 1;
 		printf("%d", *p);
@@ -49,13 +48,11 @@ void func1(int *p) {
 		*p = 2;
 		printf("%d", *p);
 	}
-
 	return;
 }
 
 /*switch•¶*/
 void func2(int *p) {
-
 	switch (*p) {
 		case 0 :*p = 3; printf("%d", *p);		/*0‚È‚ç3‚ğŠi”[‚µ•\¦*/
 			break;
@@ -66,7 +63,6 @@ void func2(int *p) {
 		default :*p = 6; printf("%d", *p);		/*‚»‚êˆÈŠO‚È‚ç6‚ğŠi”[‚µ•\¦*/
 			break;
 	}
-
 	return;
 }
 
@@ -75,26 +71,21 @@ void func3(int *p) {
 
 	/*7`10‚É1‚Ã‚ÂƒCƒ“ƒNƒŠƒƒ“ƒg‚µ•\¦*/
 	for (*p = 7; *p <= 10; (*p)++ ) {
-
 		printf("%d", *p);
 
 		if (*p == 10) {		/*10‚É‚È‚Á‚½‚ç”²‚¯‚é*/
 			break;
 		}
-
 	}
-
 	return;
 }
 
 /*while•¶*/
 void func4(int *p) {
-
 	*p = 11;	/*p‚É11‚ğŠi”[*/
 
 	/*11`20‚É1‚Ã‚ÂƒCƒ“ƒNƒŠƒƒ“ƒg‚µ•\¦*/
 	while (*p <= 20) {
-	
 		printf("%d", *p);
 
 		if (*p == 20) {		/*20‚É‚È‚Á‚½‚ç”²‚¯‚é*/
@@ -103,6 +94,5 @@ void func4(int *p) {
 
 		(*p)++;
 	}
-
 	return;
 }
